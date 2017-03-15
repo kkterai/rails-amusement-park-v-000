@@ -1,9 +1,10 @@
 <%= form_for attraction do |f| %>
-  Name: <%= f.text_field :name %><br />
-  Tickets: <%= f.text_field :tickets %><br />
-  Nausea Rating: <%= f.text_field :nausea_rating %><br />
-  Happiness Rating: <%= f.text_field :happiness_rating %><br />
-  Minimum Height: <%= f.text_field :min_height %><br />
-  Picture: <%= f.text_field :picture %><br />
+  <p> Name: <%= f.text_field :name %> <p/>
+  <p> Tickets: <%= f.text_field :tickets %> <p/>
+  <p> Nausea Rating: <%= f.text_field :nausea_rating %> <p/>
+  <p> Happiness Rating: <%= f.text_field :happiness_rating %> <p/>
+  <p> Minimum Height: <%= f.text_field :min_height %> <p/>
+  <p> Picture: <%= f.text_field :picture %> <p/>
+  <br>
   <%= f.submit %>
 <% end %>
