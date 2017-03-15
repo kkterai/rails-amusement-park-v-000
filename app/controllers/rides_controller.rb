@@ -6,11 +6,9 @@ class RidesController < ApplicationController
 
   def create
     @ride = Ride.create(user_id: params[:user_id],attraction_id: params[:attraction_id])
-    @ride.take_ride
-    attraction = @ride.attraction
+    @message = @ride.take_ride
     user = @ride.user
-    flash[:notice] = "Thanks for riding the #{attraction.name}!"
-    redirect_to user
+    redirect_to(user, :notice => @message)
   end
 
 end
